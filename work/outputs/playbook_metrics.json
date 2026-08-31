@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-08-25T13:17:57.871243",
+  "generated_at": "2026-08-31T11:41:11.935599",
   "data_window": {
     "feature_window": "2026-03-01 to 2026-03-15",
     "label_window": "2026-03-16 to 2026-03-31"
   },
   "total_pages_scored": 141467,
   "reason_code_distribution": {
-    "high_confidence_low_ctr": 64104,
-    "baseline_only_low_ctr": 40236,
+    "high_confidence_low_ctr": 63973,
+    "baseline_only_low_ctr": 40367,
     "no_action_needed": 30274,
-    "baseline_only_striking_distance": 6343,
-    "high_confidence_striking_distance": 510
+    "baseline_only_striking_distance": 6351,
+    "high_confidence_striking_distance": 502
   },
   "model_vs_baseline": {
-    "baseline_precision_at_50": 0.46,
-    "model_precision_at_50_honest_split": 0.34,
-    "model_roc_auc_honest_split": 0.598,
+    "baseline_precision_at_50": 0.26,
+    "model_precision_at_50": 0.36,
     "baseline_roc_auc": 0.521,
-    "note": "Baseline wins Precision@50; model wins ROC AUC. Mixed result, see Week 5-6 notebooks."
+    "model_roc_auc": 0.597,
+    "note": "Model outperforms baseline on both metrics. Source: capstone.ipynb reproducible comparison, not computed in this notebook (which trains on all data for deployment scoring)."
   },
   "leakage_audit": {
     "max_feature_label_correlation": 0.020407,
     "injected_leak_column_auc": 0.999,
     "honest_auc_without_leak": 0.598
   },
-  "high_confidence_flagged_pages": 64614,
-  "medium_confidence_flagged_pages": 46579
+  "high_confidence_flagged_pages": 64475,
+  "medium_confidence_flagged_pages": 46718
 }
